@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bungofarm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Bungofarm</h1>
+  <p>Fresh • Local • Reliable</p>
+</header>
+
+<section class="products">
+  <div class="product">
+    <h3>Broiler Chicken</h3>
+    <p>KES 900</p>
+    <button onclick="addItem('Broiler Chicken - 900')">Add to Order</button>
+  </div>
+
+  <div class="product">
+    <h3>Layers Chicken</h3>
+    <p>KES 850</p>
+    <button onclick="addItem('Layers Chicken - 850')">Add to Order</button>
+  </div>
+
+  <div class="product">
+    <h3>Egg Tray (30 eggs)</h3>
+    <p>KES 450</p>
+    <button onclick="addItem('Egg Tray - 450')">Add to Order</button>
+  </div>
+
+  <div class="product">
+    <h3>Chicken Feeds (50kg)</h3>
+    <p>KES 3200</p>
+    <button onclick="addItem('Feeds 50kg - 3200')">Add to Order</button>
+  </div>
+</section>
+
+<section class="order">
+  <h2>Your Order</h2>
+  <ul id="orderList"></ul>
+  <button class="whatsapp" onclick="sendWhatsApp()">Place Order via WhatsApp</button>
+</section>
+
+<footer>
+  © 2026 Bungofarm
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
